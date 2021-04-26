@@ -67,21 +67,19 @@ header img {
 
 /* Main heading in header */
 header h1 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
     font-size: calc(48px + (84 - 48) * ((100vw - 320px) / (1140 - 320)));
-    color: #1435b3;
-    letter-spacing: 1px;
+    color: #1f364d;
+    letter-spacing: -1px;
     margin-bottom: 20px;
-    font-weight: 500;
 }
 
 /* Sub-heading in header */
 header h2 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
     font-size: calc(19px + (22 - 18) * ((100vw - 320px) / (1140 - 320)));
     color: #2F4F4F;
     line-height: 1.6;
-    font-weight: 500;
 }
 
 /* ======================= SECTIONS ======================== */
@@ -123,41 +121,27 @@ header h2 {
 
 /* Sections: main heading */
 section h1 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
     font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1140 - 320)));
-    letter-spacing: 1px;
-    color: #1435b3;
+    letter-spacing: -1px;
+    color: #000;
     margin-bottom: 12px;
     line-height: 1.2;
-    font-weight: 500;
 }
 
 /* Sections: text paragraphs */
 section p {
-    font-family: 'Arvo', serif;
-    font-size: calc(17px + (21 - 17) * ((100vw - 320px) / (1140 - 320)));
+    font-family: 'Rubik', sans-serif;
+    font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1140 - 320)));
     color: #2F4F4F;
     margin-bottom: 20px;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 /* Coloured backgrounds */
 .bg-header { background-color: #f5f9fb }
-.bg-blue-light { background-color: #d8f0f5 }
-
-/* Default gradient direction: top to bottom */
-.bg-blue-dark { background-image: linear-gradient(#0575e6, #1435b3) }
-
-/* Gradient direction: left to right */
-.bg-blue-dark { background-image: linear-gradient(90deg, #0575e6, #1435b3) }
-
-/* Light blue section background: h1 headings and p text paragraphs */
-.bg-blue-light h1 { color: #1435b3 }
-.bg-blue-light p  { color: #222 }
-
-/* Dark blue section background: h1 headings and p text paragraphs */
-.bg-blue-dark h1 { color: #fff }
-.bg-blue-dark p  { color: #fff }
+.bg-pastel-1   { background-color: #BEC7B4 }
+.bg-pastel-2   { background-color: #DEE2D9 }
 
 /* =============== UTILTY CLASSES ============== */
 .text-center { text-align: center !important }
