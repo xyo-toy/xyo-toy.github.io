@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Customise Bootstrap for practical grid layouts -->
-    <link rel="stylesheet" href="../assets/css/bootstrap-custom.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-custom.css">
     <style>
         .container { padding-top: 40px }
         .js-box {
@@ -18,6 +18,7 @@
             margin-bottom:20px;
             font-size: larger;
         }
+		.js-box p:last-child { margin-bottom: 0 }
     </style>
 
 </head>
@@ -25,14 +26,18 @@
 
 <body>
     <div class="container col-md-8 offset-md-2">
-        <h1><b>Exercise 1-2</b>: JavaScript Introduction</h1>
+        <h1><b>Exercise 4-1</b>: JavaScript Functions</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam! minus expedita numquam!</p>
 
 		<div class="js-box">
+            <button id="btnGreeting">Click to display greeting</button>
 
-			<script>
-                document.write("Thank "+"you for visiting "+"my web"+" "+"page.");
-            </script>
+            <script>
+                document.getElementById("btnGreeting").addEventListener("click", sayHello);
+                function sayHello() {
+                    window.alert("Welcome to my web page.");
+                }
+			</script>
 
 		</div>
 

@@ -67,10 +67,10 @@
             let firstNum  = document.getElementById("firstNum").value;
             let secondNum = document.getElementById("secondNum").value;
             /* Put sum of the two numbers in a new variable */
-
+           let resultdNum = firstNum + secondNum;
             /* Display the result on the web page */
-
-        }
+           document.getElementById("resultNum").innerHTML = "<b>"+resultdNum+"<\/b>";
+       }
 
         function resetNums() {
             document.getElementById("firstNum").value = "";

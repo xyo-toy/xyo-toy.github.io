@@ -22,7 +22,7 @@
             border: solid 1px green;
             height: 40px;
             background-color: #E7FFE7;
-            width: 280px;
+            width: 480px;
             padding: 3px 12px;
         }
        
@@ -33,31 +33,52 @@
 
 <body>
     <div class="container col-md-8 offset-md-2">
-        <h1><b>Exercise 5-1</b>: Javascript User Input</h1>
-        <p>This script captures and displays a value data entered by users.</p>
+        <h1><b>Exercise 7-3</b>: JavaScript Conditional Statements</h1>
+        <p>This script tests user input with the <i>if</i> and <i>else if</i> commands.</p>
         
-        <h3>Display User Input</h3>
-        <div class="js-box">
-           
-            <p>First Name: &nbsp;<input type="text" id="fName"></p>
-            <p><button onclick="showUserInput()">Show user input</button></p>
+        <h3>Using <i>if</i>, <i>else if</i> and <i>else</i> statements</h3>
 
-            <p>You entered: </p>
+        <div class="js-box">
+            <p>Welcome, visitor. What country are you from?</p>
+            <p>Country Name: &nbsp;<input type="text" id="countryName"></p>
+            <p><button id="btnUserCountry">Show greeting</button></p>
+                    
             <div id="resultBox"></div>
- 
+
         </div>
+
+        <script>
+        
+        function userCountryGreeting() {
+            /* Place the country name from the input field in a variable */
+            let userCountry = document.getElementById("countryName").value;
+            let userGreeting;
+            /* Display the appropriate greeting */
+            if (userCountry == "France") {
+                userGreeting = "🇫🇷 &nbsp;Bonjour";
+            }
+                        
+            else if (userCountry == "Germany") {
+                userGreeting = "🇩🇪 &nbsp;Guten tag";
+            }
+                        
+            else if (userCountry == "Italy") {
+                userGreeting = "🇮🇹 &nbsp;Ciao";
+            }
+            else {
+                userGreeting = "🌎  Wherever you are from, welcome to my website";
+            }
+
+            document.getElementById("resultBox").innerHTML = userGreeting;
+        }
+        </script>
+ 
 
   
     </div>
 
-    
     <script>
-        function showUserInput() {
-            /* Place the first name from the input field in a variable */
-            let userInput = document.getElementById("fName").value;
-            /* Display the value on the web pageo */
-;           document.getElementById("resultBox").innerHTML = "<b>"+userInput+"<\/b>";
-        }
+        document.getElementById("btnUserCountry").addEventListener("click", userCountryGreeting);
     </script>
 
     <!-- jQuery library -->

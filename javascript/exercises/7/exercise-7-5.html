@@ -15,10 +15,17 @@
             border:solid 1px yellow;
             padding:20px;
             background-color: lightyellow;
-            margin-bottom:20px;
+            margin-bottom: 48px;
             font-size: larger;
         }
-        .js-box p:last-child { margin-bottom: 0 }
+        #resultBox, #resultNum {
+            border: solid 1px green;
+            height: 40px;
+            background-color: #E7FFE7;
+            width: 280px;
+            padding: 3px 12px;
+        }
+       
     </style>
 
 </head>
@@ -26,36 +33,38 @@
 
 <body>
     <div class="container col-md-8 offset-md-2">
-        <h1><b>Exercise 2-1</b>: Objects, Properies and Methods</h1>
-        <p>These scripts reveal information about your computer's operating system, web browser, window and web page.</p>
-
-        <h3>OS platform and web browser</h3>
-
-		<div class="js-box">
-            <script>
-                document.write("<p><b>"+navigator.userAgent+"<\/b><\/p>")
-            </script>
-		</div>
+        <h1><b>Exercise 7-5</b>: Javascript Conditional Statements</h1>
+        <p>This script tests user input with the <i>if</i> and <i>else if</i> commands, and the || logical operator.</p>
         
-        <h3>Window of web browser</h3>
-        
+        <h3>Using <i>if</i> and <i>else if</i> statements with the || operator</h3>
         <div class="js-box">
-            <script>
-                document.write("<p>Viewport width: <b>"+window.innerWidth+"px<\/b><br>");
-                document.write("Viewport height: <b>"+window.innerHeight+"px<\/b><\/p>");
+           
+        <script>
+            let userNumber;
+            userNumber = window.prompt("Please enter a number between 1 and 100.");
+            if ( (userNumber < 0 ) || (userNumber > 100 ) ) {
+                window.alert("Your entered number is not within the allowed range.");
+            }
+            else if (userNumber < 50 ) {
+                window.alert("Your entered number is less than 50.");
+            }
+
+            else if (userNumber > 50 ) {
+                window.alert("Your entered number is greater than 50.");
+            }
+
+            else if (userNumber == 50 ) {
+                window.alert("Your entered number is exactly 50.");
+            }            
             </script>
+ 
         </div>
 
-        <h3>Web page in window of web browser</h3>
-
-        <div class="js-box">
-            <script>
-                document.write("<p><b>"+window.location.href+"<\/b><\/p>");
-
-            </script>
-        </div>
-    
+  
     </div>
+
+    
+
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -63,6 +72,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
