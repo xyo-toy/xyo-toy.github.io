@@ -1,57 +1,193 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emeric du Gardin | Creative Digital Designer</title>
-    <meta name="description" content="Hi I'm Emeric, a UI & UX designer based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design.">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Mary Smith Web Designer</title>
+	<meta name="description" content="I create digital experiences to promote products, services and events.">
+    <meta name="author" content="Emeric du Gardin">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/lesson%20images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/lesson%20images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/lesson%20images/favicon-16x16.png">
     <link rel="manifest" href="/lesson%20images/site.webmanifest">
-    <link rel="stylesheet" href="assets/css/global.css">
+    	
+    <link href="assets/css/resets.css" rel="stylesheet">
+    <link href="assets/css/menus.css" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/footer.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet"> 
+    
+    <!-- Font Awesome 5 icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+
 </head>
+
+
 
 <body>
 
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-transparent menu-sticky">
+        <!-- first child item -->
+        <a href="index.html"><img src="assets/img/website-logo.png" alt="website logo"></a>
+        <!-- second child item -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+    </div>
+    <!-- End desktop menu -->
 
-<h1>Hi, I'm Emeric du Gardin</h1>
 
-<h2>Web / UI Designer</h2>
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-transparent menu-sticky">
+            <!-- first child -->
+            <a href="index.html"><img src="assets/img/website-logo.png" alt="website logo"></a>
+            <!-- second child -->
+            <div class="item-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    <!-- End mobile menu bar -->
 
-<p>Examples of my skill.</p>
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-light">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
 
-<img src="lesson%20images/hit-the-road.jpg" alt="Picture From Hit the Road">
+        <hr>
+        <h4>About Me</h4>
+        <div class="fly-out-profile-box">
+            <img src="assets/img/profile-pic.jpg" alt="Mary Smith, web designer, Dublin">
+            <p>Hi, I'm <b>Emeric du Gardin</b>, a web and digital designer student based in Dublin, Ireland.</p>
+        </div>
+   
+        <h4>Contact</h4>
+        <p>Have a project you'd like to discuss? Let's make something great together!</p>
 
-<h3>Sample Web Pages.</h3>
-<p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-<p><a href="exercises/page-2.html">IBAT Chocolates</a></p>
-<p><a href="exercises/page-3.html">Prince & Purple Rain</a></p>
-<p><a href="exercises/page-4.html">Lorem Ipsum Text</a></p>
-<p><a href="exercises/page-5.html">Vincent van Gogh</a></p>
-<p><a href="exercises/page-6.html">Irish Tourism</a></p>
-<p><a href="exercises/page-7.html">Smoothies</a></p>
-<p><a href="exercises/page-8.html">Software Analytics</a></p>
-<p><a href="exercises/page-9.html">The Box Model</a></p>
-<p><a href="exercises/page-10.html">Web Page With Panels</a></p>
-<p><a href="exercises/page-11.html">Web Page with Pastel Sections</a></p>
-<p><a href="exercises/page-12.html">Web Page with Dark Sections</a></p>
-<p><a href="exercises/page-13.html">Web Page with Alternating Sections</a></p>
-<p><a href="exercises/page-14.html">Responsive grid of rows and columns</a></p>
-<p><a href="exercises/hero-text.html">Hero block with animated text</a></p>
-<p><a href="exercises/hero-image.html">Hero block with background image</a></p>
-<p><a href="exercises/hero-video.html">Hero block with background video</a></p>
-<p><a href="exercises/buttons-icons.html">Buttons and Icons</a></p>
-<p><a href="exercises/forms.html">Email Sign-up Form</a></p>
+        <h5><a href="emeric.du-gardn@epita.Fr" target="_blank">emeric.du-gardin@epita.fr</a></h5>
 
-<br><br>
+        <h4>Social Links</h4>
+        <div class="fly-out-social-icons">
+            <a href="https://github.com/xyo-toy" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            <a href="https://twitter.com/yoloteck" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/meric_dgd/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    <!-- End mobile menu slide-out options -->
+		
+    <header class="hero-block">
+        <div class="hero-text-container text-center-desktop text-center-mobile">
+            <h1 class="text-shadow">Emeric du Gardin</h1>
+            <h2 class="text-shadow">Front-end Developer</h2>
+            <div class="container-btn text-center-desktop text-center-mobile">
+                <a href="portfolio/index.html" class="btn btn-solid btn-rounded"><i class="fas fa-arrow-right"></i> Portfolio</a>
+                <a href="contact/index.html" class="btn btn-ghost btn-rounded"><i class="fas fa-arrow-right"></i> Contact</a>
+            </div>
+        </div>
+        <div class="hero-bg-media">
+            <img src="assets/img/hero-home-background.jpg" alt="sample background image">
+        </div>
+        <div class="bg-overlay"></div>
+    </header>
+	
+	<!-- Begin single-column container -->
 
-<p> My portfolio projects.</p>
+	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+	<div class="container-flexbox bg-pastel-green">
+		<div class="item-1">
+			<h2>Recent <span class="text-accent">projects</span></h2>
+            <p>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/index.html" class="fancy-link">portfolio</a>.</p>
+            
+            <p>Have a project you'd like to discuss? <a href="contact/index.html" class="fancy-link">Let's make something great together!</a></p>
+		</div>
+    </div><!-- End parent flexbox container -->
+    
 
-<p><a href="portfolio/ireland/index.html">Ireland portfolio</a></p>
-<p><a href="portfolio/smoothies/index.html">Smoothies portfolio</a></p>
-<p><a href="portfolio/van-gogh/index.html">Van-Gogh portfolio</a></p>
 
+	<!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
+	<div class="container-flexbox">
+
+		<div class="item-3">
+			<a href="portfolio/van-gogh/index.html"><img src="assets/img/project-van-gogh.png" class="drop-shadow-faint" alt="Project: Vincent Van Gogh"></a>
+			<h3>Vincent Van Gogh</h3>
+            <p>Responsive page layout with fluid typography, Google Fonts, and embedded YouTube video.</p>
+            <a href="portfolio/van-gogh/index.html" class="button button-solid">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>             
+		</div>
+
+        <div class="item-3">
+			<a href="portfolio/smoothies/index.html"><img src="assets/img/project-smoothie.jpg" class="drop-shadow-faint" alt="Project: Smooth Smoothies"></a>
+			<h3>Smooth Smoothies</h3>
+            <p>Transparent images, serverless email sign-up form and JavaScript on-scroll menu effects.</p>
+            <a href="portfolio/smoothies/index.html" class="button button-solid">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>           
+        </div>
+        
+		<div class="item-3">
+			<a href="portfolio/ireland/index.html"><img src="assets/img/project-ireland.jpg" class="drop-shadow-faint" alt="Project: Ireland Tourism"></a>
+			<h3>Ireland's Attractions</h3>
+            <p>On-page navigation with a looped background video that includes a tinted overlay.</p>
+            <a href="portfolio/ireland/index.html" class="button button-solid">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>               
+		</div>
+
+	</div><!-- End parent flexbox container -->
+
+    <!-- Begin HTML footer -->
+    
+	<footer>
+
+        <h4>Emeric du Gardin, web designer</h4>
+        <h5>Excellence in digital creation</h5>
+
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+        </ul>
+        
+        <ul class="footer-icons">
+            <li>
+                <a href="https://github.com/xyo-toy" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com/yoloteck" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/meric_dgd/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+         </ul>      
+        
+
+        </footer>
+	
+	<!-- End HTML footer -->
+
+    <script src="assets/js/menus.js"></script>
+
+    
 </body>
 </html>
