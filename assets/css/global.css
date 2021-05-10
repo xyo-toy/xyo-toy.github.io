@@ -21,6 +21,10 @@ input, button, textarea, select { font: inherit }
 body { 
     text-align: center;
     font-family: sans-serif;
+    background-image: url(../Background-image/New-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     background-color: slategray;
 }
 
